@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title id="title">Dinuk | Portfolio </title>
+	<link rel="icon" type="image/x-icon" href="images/fav.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/flip-cards.css">
+	<link rel="stylesheet" href="css/home-fixes.css">
+	
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="loadData.js"></script>
+	<style>
+		html, body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+		.skill-item {
+		    transition: transform 0.2s ease-in-out;
+		}
+
+		.skill-item:hover {
+	    	transform: scale(1.1);
+		}
+
+
+
+		.logo-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            width: 60px;
+            height: auto;
+			margin-top: 8px;
+			margin-left: 10px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+			
+        }
+		
+		@media only screen and (min-width: 1024px) {
+			.contactme-dynamic  {
+					margin-left: 120px;
+                }
+        }
+        
+        @media (max-width: 768px) {
+            .navbar .navbar-toggler {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            .navbar-collapse {
+                display: none;
+            }
+
+            .navbar-expand-lg .navbar-collapse.show {
+                display: block;
+                position: absolute;
+                background-color: #fff;
+                width: 100%;
+                top: 70px;
+                left: 0;
+                z-index: 1000;
+            }
+
+            .navbar-nav {
+                flex-direction: column;
+            }
+
+            .nav-item {
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
+		.navbar {
+            background-color: #fff !important;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-nav .nav-link {
+            color: #000 !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff !important;
+        }
+		
+		.navbar-toggler {
+            border-color: #000 !important;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+        }
+
+        .navbar-collapse {
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        .navbar-collapse.collapsing {
+            max-height: 0;
+        }
+
+        .navbar-collapse.show {
+            max-height: 500px;
+        }
+		
+		@media (max-width: 768px) {
+            .home-bg {
+                background-position: 75% center !important; /* Align the right side of the image */
+                background-size: auto 100% !important; /* Fit the image vertically in the screen */
+            }
+			.home-bg1 {
+                background-position: 77% center !important; /* Align the right side of the image */
+                background-size: auto 100% !important; /* Fit the image vertically in the screen */
+            }
+
+        }
+		
+		body {
+            padding-top: 70px; /* Adjust based on navbar height to prevent content overlap */
+        }
+		
+		#home-section {
+			touch-action: pan-y; /* Allow vertical scrolling on touch devices */
+			overflow-y: auto; /* Allow vertical scrolling */
+			-webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+		}
+	</style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" style="height: 70px;" id="ftco-navbar">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="logo-container">
+			<video autoplay loop muted playsinline>
+				<source src="images/site-logo1.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="collapse navbar-collapse" id="ftco-nav">
+			<ul class="navbar-nav nav ml-auto">
+				<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+				<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+				<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+				<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+				<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+			</ul>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container-fluid px-md-0">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+						<div class="home-bg one-third order-md-last img" style="background-image:url(images/home-bg-1.jpg); background-position: -300px 0;">
+							<div class="overlay"></div>
+							<div class="overlay-1"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-end ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading" id="home-subheading0" style="">Hello! This is Dinuk</span>
+								<h1 class="mb-4 mt-3" id="home-heading0" style="">Full Stack Web Developer</h1>
+								<p><a href="#contact-section" class="btn btn-primary">Contact Me</a> </p>
+								<!-- <a href="" class="btn btn-primary">Download CV</a>    Download CV Button-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container-fluid px-md-0">
+					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+						<div class="one-third order-md-last img home-bg1 "  style="background-image:url(images/home-bg-2.jpg); background-position: -300px 0;">
+							<div class="overlay"></div>
+							<div class="overlay-1"></div>
+						</div>
+						<div class="one-forth d-flex align-items-end ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<h1 class="mb-4 mt-3" id="home-heading1">Developing Websites Seamlessly</h1>
+								<p><a href="#contact-section" class="btn btn-primary">Contact Me</a> </p>
+								<!-- <a href="" class="btn btn-primary">Download CV</a>    Download CV Button-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex no-gutters">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/aboutimageedited.png);">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
+					<div class="py-md-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								<span class="subheading" id="about-subheading">My Intro</span>
+								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;" id="about-heading">About Me</h2>
+								<p id="about-paragraph">I am Dinuk Samarakoon, a full-stack web developer dedicated to creating scalable, user-friendly applications. Skilled in both front-end and back-end technologies, I excel at designing, developing, and deploying efficient web solutions. I actively follow industry trends, embrace emerging technologies, and focus on innovation to deliver impactful and high-quality software development results.</p>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span >Name:</span> <span id="about-name" >Dinuk Samarakoon</span></li>
+									<li class="d-flex"><span >School:</span>
+										<span>Trinity College Kandy, Sri Lanka</span>
+									</li>
+									<li class="d-flex"><span >University</span>
+										<ul style="margin-left: 0px; padding: 0;">
+											<li ><span style="color:#b1b493">Uva Wellassa University of Sri Lanka</span></li>
+											<li style=" margin-left: 30px;"><span style="color:#b1b493;">B.Sc. (Hons) in Computer Science and Technology</span></li>
+										</ul>
+									</li>
+
+									<li class="d-flex"><span >Location:</span> <span id="about-address">Kandy, Sri Lanka</span></li>
+									<li class="d-flex"><span >Email:</span> <span id="about-email" ></span></li>
+									<li class="d-flex"><span >Phone No: </span> <span id="about-phone" ></span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="ftco-section bg-light" id="skills-section">
+		<div class="container-fluid px-0">
+			<div class="row">
+				<div class="col-12 text-center mb-4">
+					<span class="subheading" id="skills-subheading">My Skills</span>
+					<h2 class="mb-4" id="skills-heading">My Skills</h2>
+					<p id="skills-paragraph">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+				</div>
+				<div style="display: flex; justify-content: center; width: 100%; margin-top: 50px;">
+					<p class="text-center w-100" style="font-size: x-large; color: black;">Languages</p>
+				</div>
+				<div class="d-flex flex-wrap justify-content-around align-items-center w-100 animate__animated animate__fadeInUp">
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="https://www.svgrepo.com/show/303388/java-4-logo.svg" alt="Java logo" class="img-fluid" style="max-width: 130px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill4-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="python logo" class="img-fluid" style="max-width: 90px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill2-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/640px-Javascript_badge.svg.png" alt="javascript logo" class="img-fluid" style="max-width: 90px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/640px-PHP-logo.svg.png" alt="PHP logo" class="img-fluid" style="max-width: 110px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="html5 logo" class="img-fluid" style="max-width: 90px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill1-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/512px-CSS3_logo_and_wordmark.svg.png" alt="css3 logo" class="img-fluid" style="max-width: 70px;">
+						</div>
+					</div>
+				</div>
+
+				
+				<div style="display: flex; justify-content: center; width: 100%; margin-top: 50px;">
+					<p class="text-center w-100" style="font-size: x-large; color: black;">Frameworks</p>
+				</div>
+				<div class="d-flex flex-wrap justify-content-around align-items-center w-100 animate__animated animate__fadeInUp">
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill3-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="react logo" class="img-fluid" style="max-width: 90px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/640px-Node.js_logo.svg.png" alt="NodeJS logo" class="img-fluid" style="max-width: 110px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="images/springboot-logo.svg" alt="Springboot logo" class="img-fluid" style="max-width: 200px; min-width: 70px;">
+						</div>
+					</div>	
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tailwind_CSS_logo.svg/640px-Tailwind_CSS_logo.svg.png" alt="TailwindCSS logo" class="img-fluid" style="max-width: 220px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="https://www.djangoproject.com/m/img/logos/django-logo-positive.svg" alt="Django logo" class="img-fluid" style="max-width: 110px;">
+						</div>
+					</div>	
+				</div>
+
+
+				<div style="display: flex; justify-content: center; width: 100%; margin-top: 50px;">
+					<p class="text-center w-100" style="font-size: x-large; color: black;">Databases</p>
+				</div>
+				<div class="d-flex flex-wrap justify-content-around align-items-center w-100 animate__animated animate__fadeInUp">
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/640px-Database-mysql.svg.png" alt="MySQL logo" class="img-fluid" style="max-width: 90px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="images/postgresql-logo.svg" alt="Postgre.sql logo" class="img-fluid" style="max-width: 300px; min-width: 220px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/640px-MongoDB_Logo.svg.png" alt="MongoDB logo" class="img-fluid" style="max-width: 200px; height: auto;">
+						</div>
+					</div>									
+				</div>
+
+
+				<div style="display: flex; justify-content: center; width: 100%; margin-top: 50px;">
+					<p class="text-center w-100" style="font-size: x-large; color: black;">Technical Proficiency</p>
+				</div>
+				<div class="d-flex flex-wrap justify-content-around align-items-center w-100 animate__animated animate__fadeInUp">
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.svg" alt="Git logo" class="img-fluid" style="max-width: 120px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="images/github-mark.svg" alt="GitHub logo" class="img-fluid" style="max-width: 80px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="images/intellij-idea.svg" alt="IntelliJ IDEA" class="img-fluid" style="max-width: 80px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="images/pycharm-logo.svg" alt="PyCharm logo" class="img-fluid" style="max-width: 80px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="images/androidstudio.svg" alt="Android Studio logo" class="img-fluid" style="max-width: 90px;">
+						</div>
+					</div>
+				</div>
+				<div class="d-flex flex-wrap justify-content-around align-items-center w-100 animate__animated animate__fadeInUp">
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="https://logowik.com/content/uploads/images/postman-api-platform6643.logowik.com.webp" alt="Postman logo" class="img-fluid" style="max-width: 160px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="https://cdn.iconscout.com/icon/free/png-512/free-figma-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-3-pack-logos-icons-2944870.png" alt="Figma logo" class="img-fluid" style="max-width: 80px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="images/aws-logo.svg" alt="AWS logo" class="img-fluid" style="max-width: 100px;">
+						</div>
+					</div>
+					<div class="skill-item text-center m-3">
+						<div class="skill-content">
+							<img id="skill0-logo" src="https://www.logo.wine/a/logo/Linux/Linux-Logo.wine.svg" alt="Linux logo" class="img-fluid" style="max-width: 180px;">
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-project" id="projects-section">
+		<div class="container-fluid px-md-4">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading" id="projects-subheading">Projects</span>
+					<h2 class="mb-4" id="projects-heading">Projects</h2>
+					<p id="projects-paragraph">Exploring creativity and functionality through my featured development projects</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project1.1.jpg);">
+								<div class="overlay"></div>
+								<div class="text text-center p-4">
+									<h3 class="flip-card-back-name">Hospital Clinical Service Management System(HCSMS)</h3>
+								</div>
+							</div>
+							<div class="flip-card-back">
+								<p>Developed and implemented a Hospital Clinical Services Management System (HCSMS) that streamlined patient registration, appointment scheduling, electronic health records management, medicine dispensing, and laboratory report synchronization.
+									<br><span style="color: rgb(231, 231, 98);">Technologies : MongoDB, Express.js, React.js, Node.js, Tailwind CSS</span></p>
+								<a href="https://github.com/dinuk-samarakoon/Hospital-Clinical-Services-Management-System" target="_blank"><i class="fa fa-github" style="font-size:50px; color: white; transition: all 0.1s ease-in-out;" onmouseover="this.style.fontSize='60px'" onmouseout="this.style.fontSize='50px'"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project2.jpg);">
+								<div class="overlay"></div>
+								<div class="text text-center p-4">
+									<h3 class="flip-card-back-name">Railway services management system(RSMS)</h3>
+								</div>
+							</div>
+							<div class="flip-card-back">
+								<p style="font-size: 14px;" >A user friendly interface, dynamic PDF and QR code generation, real-time SMS notifications, secure online payments, e-catering system, and user feedback portal and collaborated with a team to deliver a functional and impactful solution.
+									<br><span style="color: rgb(231, 231, 98);">Technologies : HTML, CSS,Bootstrap,PHP</span></p>
+									<a href="https://github.com/dinuk-samarakoon/Sri-Lanka-Railway-Management-System" target="_blank"><i class="fa fa-github" style="font-size:50px; color: white; transition: all 0.1s ease-in-out;" onmouseover="this.style.fontSize='60px'" onmouseout="this.style.fontSize='50px'"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project3.jpg);">
+								<div class="overlay"></div>
+								<div class="text text-center p-4">
+									<h3 class="flip-card-back-name">TimeMaster - Time Management System</h3>
+								</div>
+							</div>
+							<div class="flip-card-back">
+								<p>TimeMaster is a web-based task management system with an intuitive interface, data visualization, robust security, and CRUD functionalities, designed to boost productivity across devices.
+									<br><span style="color: rgb(231, 231, 98);">Technologies Used: Django, React JS, HTML, CSS, JS</span></p>
+								<a href="https://github.com/dinuk-samarakoon/TimeMaster" target="_blank"><i class="fa fa-github" style="font-size:50px; color: white; transition: all 0.1s ease-in-out;" onmouseover="this.style.fontSize='60px'" onmouseout="this.style.fontSize='50px'"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project4.jpg);">
+								<div class="overlay"></div>
+								<div class="text text-center p-4">
+									<h3 class="flip-card-back-name">Parking Management System</h3>
+								</div>
+							</div>
+							<div class="flip-card-back">
+								<p>Developed a Parking Management System to efficiently manage parking spaces, allowing users to reserve spots and view parking availability. The system includes an intuitive user interface and dynamic functionality for both administrators and users
+									<br><span style="color: rgb(231, 231, 98);">Technologies Used: PHP, Bootstrap, HTML, CSS, MYSQL</span></p>
+								<a href="https://github.com/dinuk-samarakoon/Parking-Management-System" target="_blank"><i class="fa fa-github" style="font-size:50px; color: white; transition: all 0.1s ease-in-out;" onmouseover="this.style.fontSize='60px'" onmouseout="this.style.fontSize='50px'"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-md-4">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project5.1.1.jpg);">
+								<div class="overlay"></div>
+								<div class="text text-center p-4">
+									<h3 class="flip-card-back-name">Audio Wave Music App</h3>
+								</div>
+							</div>
+							<div class="flip-card-back">
+								<p style="font-size: 14px;">Audio Wave is an innovative music player app designed to fill the gap in the market for modern, user-friendly music applications. It combines an elegant interface with advanced functionality to deliver an exceptional user experience.Key Features: Playback Controls, Playlist Management, Search Functionality, Equalizer, Offline Mode, Notification Controls, Sleep Timer, Shuffle All
+									<br><span style="color: rgb(231, 231, 98);">Technologies: Android Studio, Java</span></p>
+								<a href="https://github.com/dinuk-samarakoon/Audio-Wave-Music-Mobile-App" target="_blank"><i class="fa fa-github" style="font-size:50px; color: white; transition: all 0.1s ease-in-out;" onmouseover="this.style.fontSize='60px'" onmouseout="this.style.fontSize='50px'"></i></a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<div class="col-md-4">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project6.jpg);">
+								<div class="overlay"></div>
+								<div class="text text-center p-4">
+									<h3 class="flip-card-back-name">Grade Calculation Mobile App</h3>
+								</div>
+							</div>
+							<div class="flip-card-back">
+								<p>The Grade Calculator Mobile App is a user-friendly Android application developed with Java in Android Studio. It helps students and educators efficiently calculate total marks, averages, and final grades. This app streamlines the grade calculation process, ensuring accuracy and reducing manual errors.
+									<br><span style="color: rgb(231, 231, 98);">Technologies: Android Studio, Java</span></p>
+								<a href="https://github.com/dinuk-samarakoon/Grade-Calculation-Mobile-App" target="_blank"><i class="fa fa-github" style="font-size:50px; color: white; transition: all 0.1s ease-in-out;" onmouseover="this.style.fontSize='60px'" onmouseout="this.style.fontSize='50px'"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading" id="contact-subheading"></span>
+					<h2 class="mb-4" id="contact-heading">Get in Touch</h2>
+					<p id="contact-paragraph">I'm excited to collaborate and turn your ideas into reality</p>
+				</div>
+			</div>
+
+			<div class="row block-9 contactme-dynamic" style="display: flex; align-items: center; justify-content:space-around;" >
+				<div class="col-md-6 d-flex pl-md-5" >
+					<div class="row">
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-map-marker"></span>
+							</div>
+							<div class="text">
+								<p><span>Location:</span></p>
+								<p id="contact-address"></p>
+							</div>
+						</div>
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="text">
+								<p><span>Phone:</span></p>
+								<p id="contact-phone"></p>
+							</div>
+						</div>
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-paper-plane"></span>
+							</div>
+							<div class="text">
+								<p><span>Email:</span></p>
+								<p id="contact-email"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex pl-md-5" >
+					<div class="row">
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-linkedin"></span>
+							</div>
+							<div class="text">
+								<p><span>Linkedin:</span></p>
+								<p id="contact-linkedin"></p>
+							</div>
+						</div>
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-twitter"></span>
+							</div>
+							<div class="text">
+								<p><span>Twitter:</span></p>
+								<p id="contact-twitter"></p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="ftco-footer ftco-section " style="padding: 2em 0">
+		<div style="text-align: center;" class="container">
+			<p class="copyright">&copy; <script>document.write(new Date().getFullYear());</script> Dinuk Samarakoon</p>
+		</div>
+	</footer>
+
+		
+		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-migrate-3.0.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/jquery.animateNumber.min.js"></script>
+		<script src="js/scrollax.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+		<script src="js/google-map.js"></script>
+		
+		<script src="js/main.js"></script>
+		
+		<script src="loadData.js"></script>
+		<script>
+			$(document).ready(function() {
+				// Collapse the navbar when clicking on a link or outside the navbar
+				$(document).click(function(event) {
+					var clickover = $(event.target);
+					var _opened = $('.navbar-collapse').hasClass('show');
+					if (_opened === true && !clickover.closest('.navbar').length) {
+						$('.navbar-collapse').collapse('hide');
+					}
+				});
+
+				// Toggle collapse when clicking on the hamburger icon
+				$('.navbar-toggler').on('click', function() {
+					var _opened = $('.navbar-collapse').hasClass('show');
+					if (_opened) {
+						$('.navbar-collapse').collapse('hide');
+					} else {
+						$('.navbar-collapse').collapse('show');
+					}
+				});
+
+				// Ensure navbar collapses when clicking on a link
+				$('.navbar-nav>li>a').on('click', function() {
+					$('.navbar-collapse').collapse('hide');
+				});
+			});
+		</script>
+	</body>
+</html>

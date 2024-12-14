@@ -1,0 +1,55 @@
+{
+    "title" : "Dinuk | Portfolio",
+    "home-subheading0" : "Hello! This is Dinuk",
+    "home-heading0" : "Full Stack Web Developer",
+
+    "home-heading1" : "Developing Websites Seamlessly",
+
+
+    "about-subheading" : "My Intro",
+    "about-heading" : "About Me",
+    "about-paragraph" : "Enthusiastic undergraduate Software Engineer with a strong foundation in programming languages such as Python, Java, and full-stack web development. With hands-on experience through projects, I am proficient in both back-end and front-end technologies, cloud services and have a commitment to delivering scalable and efficient software solutions. Dedicated to applying analytical skills and creativity to contribute effectively to software development teams.",
+    "about-name" : "Dinuk Samarakoon",
+    "about-address" : "Kandy, Sri Lanka",
+    "about-phone" : "<a href='tel:+94718870222'>+94 718870222</a><br><a href='tel:++94775073055'>+94 775073055</a>",
+    "about-email" : "<a href='mailto:dinuksamarakoon@gmail.com'>dinuksamarakoon@gmail.com</a>",
+
+    
+    "skills-subheading" : "My Skills",
+    "skills-heading" : "My Skills",
+    "skills-paragraph" : "Expertise in designing and developing full-stack web applications.",
+
+    "skill0-name" : "HTML5",
+    "skill0-paragraph" : "I have experience with HTML5, CSS3, and responsive web design. I have built websites using semantic HTML5 tags, and I have a good understanding of the various features of HTML5.",
+
+    "skill1-name" : "CSS3",
+    "skill1-paragraph" : "I have experience with CSS3, including preprocessors like Sass and Less. I have built responsive websites using media queries, and I have a good understanding of the various features of CSS3.",
+    
+    "skill2-name" : "JavaScript",
+    "skill2-paragraph" : "I have experience with JavaScript, including ES6 syntax and modern JavaScript frameworks like React and Angular. I have built interactive web applications using JavaScript, and I have a good understanding of the various features of JavaScript.",
+
+    "skill3-name" : "React",
+    "skill3-paragraph" : "I have experience with React, including React Hooks and React Context. I have built interactive web applications using React, and I have a good understanding of the various features of React.",
+
+    "skill4-name" : "Python",
+    "skill4-paragraph" : "I have experience with Python, including data structures, algorithms, and object-oriented programming. I have built scripts and applications using Python, and I have a good understanding of the various features of Python.",
+
+    
+    "projects-subheading" : "Projects", 
+    "projects-heading" : "Projects",
+    "projects-paragraph" : "Exploring creativity and functionality through my featured development projects.",
+
+    
+
+
+    "contact-subheading" : "Feel free to reach out",
+    "contact-heading" : "Contact Me",
+    "contact-paragraph" : "I'm excited to collaborate and turn your ideas into reality",
+    
+    "contact-address" : "<span style='color:#b1b493;'>Kandy, Sri Lanka</span>",
+    "contact-email" : "<a href='mailto:dinuksamarakoon@gmail.com'>dinuksamarakoon@gmail.com</a>",
+    "contact-phone" : "<a href='tel:+94718870222'>+94 718870222</a>",
+    "contact-linkedin" : "<a target='_blank' href='http://linkedin.com/in/d-samarakoon'>linkedin.com/in/d-samarakoon</a>",
+    "contact-facebook" : "<a target='_blank' href='https://www.facebook.com/share/18TagixwPc/?mibextid=LQQJ4d'>facebook.com/share/18TagixwPc</a>",
+    "contact-twitter" : "<a target='_blank' href='https://x.com/DinukSamarakoon'>x.com/DinukSamarakoon</a>"
+}
